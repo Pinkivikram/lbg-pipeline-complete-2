@@ -35,7 +35,7 @@ function App() {
 
   return (
     <div className='header field'>
-      INCOME TAX CALCULATOR
+      GROSS SALARY CALCULATOR
       <div className='colour-border'>
         <VatRateField customstyle="field" vatRateChanged={handleVatRateChanged} value={vatRate} updatePrices={updatePrices} />
         <PriceEntryField customstyle="field" label="Salary Before Tax: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
