@@ -13,8 +13,8 @@ const VatRateField = (props) => {
         <div className={props.customstyle}>
             Tax Band: &nbsp;
             <select value={props.value} onChange={(event) => { props.vatRateChanged(+event.target.value); }}>
-                <option value="30">20%</option>
-                <option value="40">15%</option>
+                <option value="30">30%</option>
+                <option value="40">40%</option>
                 <option value="45">45%</option>
                 <option value="0">Exempt</option>
             </select>
