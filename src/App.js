@@ -38,7 +38,7 @@ function App() {
       GROSS SALARY CALCULATOR
       <div className='colour-border'>
         <VatRateField customstyle="field" vatRateChanged={handleVatRateChanged} value={vatRate} updatePrices={updatePrices} />
-        <PriceEntryField customstyle="field" label="Salary Before Tax: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
+        <PriceEntryField customstyle="field" label="Net Salary: " priceChanged={handleNetPriceChange} price={netPrice === 0.0 ? "" : netPrice} />
         <DisplayBlock customstyle="field" label="Tax to pay: " value={vatToPay} />
         <PriceEntryField customstyle="field" label="Gross Salary: " priceChanged={handleGrossPriceChange} price={grossPrice === 0.0 ? "" : grossPrice} />
       </div>
